@@ -1,0 +1,468 @@
+!SESSION 2020-11-29 21:33:19.392 -----------------------------------------------
+eclipse.buildId=4.2.2.201905232009-RELEASE
+java.version=11.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY oracle.eclipse.tools.coherence.ui 4 0 2020-11-29 21:33:23.521
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.coherence.ui [659]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.weblogic.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.weblogic.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.weblogic.ui [678]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.jaxrs; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.jaxrs; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.jaxrs [671]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.500,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.501.v201902162203"; singleton:="true"
+                     org.eclipse.jst.ws.jaxws.core [808]
+                       Unresolved requirement: Import-Package: javax.jws
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.401,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.500.v201902162239"; singleton:="true"
+                     org.eclipse.jst.ws.jaxws.ui [810]
+                       Unresolved requirement: Import-Package: javax.jws
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY oracle.eclipse.tools.common.services.ui 4 0 2020-11-29 21:33:23.569
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.common.services.ui [663]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.500,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.501.v201902162203"; singleton:="true"
+       org.eclipse.jst.ws.jaxws.core [808]
+         Unresolved requirement: Import-Package: javax.jws
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY oracle.eclipse.tools.jaxrs.ui 4 0 2020-11-29 21:33:23.585
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.jaxrs.ui [672]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.jaxrs; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.jaxrs; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.jaxrs [671]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.500,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.501.v201902162203"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.core [808]
+                Unresolved requirement: Import-Package: javax.jws
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.401,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.500.v201902162239"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.ui [810]
+                Unresolved requirement: Import-Package: javax.jws
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.common.services.ui [663]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.500,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.501.v201902162203"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY oracle.eclipse.tools.jaxrs.v11 4 0 2020-11-29 21:33:23.633
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.jaxrs.v11 [673]
+  Unresolved requirement: Require-Bundle: com.sun.jersey.core; bundle-version="[1.17.1,2.0.0)"
+    -> Bundle-SymbolicName: com.sun.jersey.core; bundle-version="1.17.1.p002"
+       com.sun.jersey.core [648]
+         Unresolved requirement: Import-Package: javax.mail; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.mail.internet; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.mail.util; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.xml.bind; version="[0.0.0,0.0.0]"
+  Unresolved requirement: Require-Bundle: com.sun.jersey.client; bundle-version="[1.17.1,2.0.0)"
+    -> Bundle-SymbolicName: com.sun.jersey.client; bundle-version="1.17.1"
+       com.sun.jersey.client [647]
+         Unresolved requirement: Import-Package: com.sun.jersey.core.header; version="[1.17.0,2.0.0)"
+           -> Export-Package: com.sun.jersey.core.header; bundle-symbolic-name="com.sun.jersey.core"; bundle-version="1.17.1.p002"; version="1.17.1"; uses:="com.sun.jersey.core.header.reader,javax.ws.rs.core,com.sun.jersey.core.util,com.sun.jersey.core.impl.provider.header,javax.ws.rs"
+         Unresolved requirement: Import-Package: com.sun.jersey.core.provider; version="[1.17.0,2.0.0)"
+           -> Export-Package: com.sun.jersey.core.provider; bundle-symbolic-name="com.sun.jersey.core"; bundle-version="1.17.1.p002"; version="1.17.1"; uses:="com.sun.jersey.core.util,javax.ws.rs.ext,javax.ws.rs.core"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.jaxrs; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.jaxrs; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.jaxrs [671]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.500,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.501.v201902162203"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.core [808]
+                Unresolved requirement: Import-Package: javax.jws
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.401,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.500.v201902162239"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.ui [810]
+                Unresolved requirement: Import-Package: javax.jws
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY oracle.eclipse.tools.weblogic.ui 4 0 2020-11-29 21:33:23.673
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.weblogic.ui [678]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.jaxrs; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.jaxrs; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.jaxrs [671]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.500,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.501.v201902162203"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.core [808]
+                Unresolved requirement: Import-Package: javax.jws
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.401,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.500.v201902162239"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.ui [810]
+                Unresolved requirement: Import-Package: javax.jws
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY oracle.eclipse.tools.webservices 4 0 2020-11-29 21:33:23.713
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webservices [695]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.500,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.501.v201902162203"; singleton:="true"
+       org.eclipse.jst.ws.jaxws.core [808]
+         Unresolved requirement: Import-Package: javax.jws
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY oracle.eclipse.tools.webservices.ui 4 0 2020-11-29 21:33:23.745
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webservices.ui [696]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.weblogic.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.weblogic.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.weblogic.ui [678]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.jaxrs; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.jaxrs; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.jaxrs [671]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.500,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.501.v201902162203"; singleton:="true"
+                     org.eclipse.jst.ws.jaxws.core [808]
+                       Unresolved requirement: Import-Package: javax.jws
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webservices; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webservices; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webservices [695]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.500,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.501.v201902162203"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY oracle.eclipse.tools.webtier.html.ui 4 0 2020-11-29 21:33:23.857
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.html.ui [700]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.ui [713]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.common.services.ui [663]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.500,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.501.v201902162203"; singleton:="true"
+                     org.eclipse.jst.ws.jaxws.core [808]
+                       Unresolved requirement: Import-Package: javax.jws
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.xml.edit.ui [714]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY oracle.eclipse.tools.webtier.jsf.ui 4 0 2020-11-29 21:33:23.873
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.jsf.ui [704]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp.ui; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.jsp.ui [706]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.common.services.ui [663]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.500,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.501.v201902162203"; singleton:="true"
+                     org.eclipse.jst.ws.jaxws.core [808]
+                       Unresolved requirement: Import-Package: javax.jws
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.xml.edit.ui [714]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.ui [713]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY oracle.eclipse.tools.webtier.jsp.ui 4 0 2020-11-29 21:33:24.049
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.jsp.ui [706]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.common.services.ui [663]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.500,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.501.v201902162203"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.core [808]
+                Unresolved requirement: Import-Package: javax.jws
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.xml.edit.ui [714]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.ui [713]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY oracle.eclipse.tools.webtier.jstl.ui 4 0 2020-11-29 21:33:24.073
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.jstl.ui [708]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.ui [713]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.common.services.ui [663]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.500,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.501.v201902162203"; singleton:="true"
+                     org.eclipse.jst.ws.jaxws.core [808]
+                       Unresolved requirement: Import-Package: javax.jws
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.xml.edit.ui [714]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.jsp.ui [706]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY oracle.eclipse.tools.webtier.struts.ui 4 0 2020-11-29 21:33:24.089
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.struts.ui [710]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.common.services.ui [663]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.500,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.501.v201902162203"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.core [808]
+                Unresolved requirement: Import-Package: javax.jws
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY oracle.eclipse.tools.webtier.ui 4 0 2020-11-29 21:33:24.097
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.ui [713]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.common.services.ui [663]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.500,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.501.v201902162203"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.core [808]
+                Unresolved requirement: Import-Package: javax.jws
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.xml.edit.ui [714]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY oracle.eclipse.tools.xml.edit.ui 4 0 2020-11-29 21:33:24.121
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.xml.edit.ui [714]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.common.services.ui [663]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.500,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.501.v201902162203"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.core [808]
+                Unresolved requirement: Import-Package: javax.jws
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jst.ws.jaxws.core 4 0 2020-11-29 21:33:24.129
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.jaxws.core [808]
+  Unresolved requirement: Import-Package: javax.jws
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jst.ws.jaxws.ui 4 0 2020-11-29 21:33:24.145
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.jaxws.ui [810]
+  Unresolved requirement: Import-Package: javax.jws
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.egit.core 1 0 2020-11-29 21:34:53.698
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2020-11-29 21:34:55.200
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-29 21:34:55.200
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3f5f79d8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5dc1597f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-11-29 21:35:16.136
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Amit'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2020-11-29 21:36:10.476
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
